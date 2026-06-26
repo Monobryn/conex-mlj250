@@ -1,0 +1,11 @@
+# Beam Stabilizer GUI — Python dependencies
+# Install with:  pip install -r requirements.txt
+#
+# Note: pythonnet is only needed on Windows for Thorlabs Kinesis (stage control).
+# The PSD side (pyserial) and the GUI run on any platform; without Kinesis the
+# stage controls are simply disabled.
+
+PyQt5>=5.15
+pyserial>=3.5
+matplotlib>=3.5
+pythonnet>=3.0 ; platform_system == "Windows"
